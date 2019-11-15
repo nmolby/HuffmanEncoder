@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HuffmanDecoder::_readFile():HuffmanDecoder.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "HuffmanDecoder::_readHeader():HuffmanDecoder.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "HuffmanEncoder::close():HuffmanEncoder.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "HuffmanEncoder::_encodeFile():HuffmanEncoder.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "this-&gt;charCountMap[&apos;a&apos;];">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HuffmanEncoder::_getPriorityQueue():HuffmanEncoder.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "HuffmanEncoder::_getCharBitMapHelper(std::__1::shared_ptr&lt;HuffmanNode&gt;, std::__1::bitset&lt;8ul&gt;, unsigned int):HuffmanEncoder.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

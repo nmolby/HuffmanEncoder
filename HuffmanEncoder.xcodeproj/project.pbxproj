@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11B41EF2237361F3008F9A1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B41EF1237361F3008F9A1A /* main.cpp */; };
+		11B41EFE2374BCB5008F9A1A /* HuffmanEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B41EFC2374BCB5008F9A1A /* HuffmanEncoder.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11B41EEC237361F3008F9A1A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1124149F2374C5130057F731 /* HuffmanNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HuffmanNode.hpp; sourceTree = "<group>"; };
+		112414A22374FFC00057F731 /* BitSet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BitSet.hpp; sourceTree = "<group>"; };
+		11726C792375FB37001376FB /* smalltestfile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = smalltestfile.txt; sourceTree = "<group>"; };
+		11B41EEE237361F3008F9A1A /* HuffmanEncoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HuffmanEncoder; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B41EF1237361F3008F9A1A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		11B41EF82373623E008F9A1A /* ReadBitFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadBitFile.h; sourceTree = "<group>"; };
+		11B41EF92373623E008F9A1A /* WriteBitFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteBitFile.h; sourceTree = "<group>"; };
+		11B41EFC2374BCB5008F9A1A /* HuffmanEncoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HuffmanEncoder.cpp; sourceTree = "<group>"; };
+		11B41EFD2374BCB5008F9A1A /* HuffmanEncoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HuffmanEncoder.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11B41EEB237361F3008F9A1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B41EE5237361F3008F9A1A = {
+			isa = PBXGroup;
+			children = (
+				11B41EF0237361F3008F9A1A /* HuffmanEncoder */,
+				11B41EEF237361F3008F9A1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11B41EEF237361F3008F9A1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11B41EEE237361F3008F9A1A /* HuffmanEncoder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11B41EF0237361F3008F9A1A /* HuffmanEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				11B41EF82373623E008F9A1A /* ReadBitFile.h */,
+				11B41EF92373623E008F9A1A /* WriteBitFile.h */,
+				11B41EF1237361F3008F9A1A /* main.cpp */,
+				11B41EFC2374BCB5008F9A1A /* HuffmanEncoder.cpp */,
+				11B41EFD2374BCB5008F9A1A /* HuffmanEncoder.hpp */,
+				1124149F2374C5130057F731 /* HuffmanNode.hpp */,
+				112414A22374FFC00057F731 /* BitSet.hpp */,
+				11726C792375FB37001376FB /* smalltestfile.txt */,
+			);
+			path = HuffmanEncoder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11B41EED237361F3008F9A1A /* HuffmanEncoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11B41EF5237361F3008F9A1A /* Build configuration list for PBXNativeTarget "HuffmanEncoder" */;
+			buildPhases = (
+				11B41EEA237361F3008F9A1A /* Sources */,
+				11B41EEB237361F3008F9A1A /* Frameworks */,
+				11B41EEC237361F3008F9A1A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuffmanEncoder;
+			productName = HuffmanEncoder;
+			productReference = 11B41EEE237361F3008F9A1A /* HuffmanEncoder */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11B41EE6237361F3008F9A1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Nathan Molby";
+				TargetAttributes = {
+					11B41EED237361F3008F9A1A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 11B41EE9237361F3008F9A1A /* Build configuration list for PBXProject "HuffmanEncoder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11B41EE5237361F3008F9A1A;
+			productRefGroup = 11B41EEF237361F3008F9A1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11B41EED237361F3008F9A1A /* HuffmanEncoder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11B41EEA237361F3008F9A1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11B41EFE2374BCB5008F9A1A /* HuffmanEncoder.cpp in Sources */,
+				11B41EF2237361F3008F9A1A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11B41EF3237361F3008F9A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		11B41EF4237361F3008F9A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		11B41EF6237361F3008F9A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11B41EF7237361F3008F9A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11B41EE9237361F3008F9A1A /* Build configuration list for PBXProject "HuffmanEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B41EF3237361F3008F9A1A /* Debug */,
+				11B41EF4237361F3008F9A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11B41EF5237361F3008F9A1A /* Build configuration list for PBXNativeTarget "HuffmanEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11B41EF6237361F3008F9A1A /* Debug */,
+				11B41EF7237361F3008F9A1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11B41EE6237361F3008F9A1A /* Project object */;
+}

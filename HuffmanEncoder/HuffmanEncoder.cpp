@@ -9,6 +9,7 @@
 #include "HuffmanEncoder.hpp"
 #include <iostream>
 
+//public method to begin encoding process
 void HuffmanEncoder::encode() {
     _getCharCountMap();
     _getPriorityQueue();
@@ -16,24 +17,31 @@ void HuffmanEncoder::encode() {
     _encodeFile();
 }
 
+//creates the dictionary of character -> character count
 void HuffmanEncoder::_getCharCountMap() {
     unsigned char nextChar;
+    //reads the entire file byte by byte
     for(int i = 0; i < _inFile.fileSizeInBytes(); i++){
         nextChar = _inFile.readUByte();
+        //if character is not in map, add it to map
         if(this->charCountMap.find(nextChar) == this->charCountMap.end()){
             this->charCountMap[nextChar] = 0;
         }
+        //increment character count
         this->charCountMap[nextChar] += 1;
     }
-    std::cout << nextChar << int(nextChar);
 }
 
+//creates priority queue and binary tree
 void HuffmanEncoder::_getPriorityQueue() {
+    //adds every node to the priority queue
     for(auto const& character: this->charCountMap){
         HuffmanNode newNode(true, character.first, character.second);
         this->_priorityQueue.push(std::make_shared<HuffmanNode>(newNode));
     }
     
+    //continually takes the top two out of the priority queue and creates a new node with them
+    //until there is only one node in the queue
     while(this->_priorityQueue.size() > 1){
         auto left = _priorityQueue.top();
         _priorityQueue.pop();
@@ -44,17 +52,22 @@ void HuffmanEncoder::_getPriorityQueue() {
     }
 }
 
+//creates the char -> bits map for every character
 void HuffmanEncoder::_getCharBitMap() {
     std::bitset<32> bits;
     _getCharBitMapHelper(_priorityQueue.top(), bits, 0);
 }
 
+//gets the bits for a given node if bottom node
+//else, recursively searches left and right nodes
 void HuffmanEncoder::_getCharBitMapHelper(std::shared_ptr<HuffmanNode> toExplore, std::bitset<32> bits, unsigned int bitSize) {
     if(toExplore){
+        //if it is a bottom node, assign the character to a new bitset with current bits/bitsize
         if(toExplore->isBottomNode){
             BitSet newBitSet(bits, bitSize);
             
             this->charBits[toExplore->character] = newBitSet;
+        //otherwise, recursively call left and right children with according bits
         } else{
             std::bitset<32> leftBits(bits);
             leftBits >>= 1;
@@ -67,18 +80,22 @@ void HuffmanEncoder::_getCharBitMapHelper(std::shared_ptr<HuffmanNode> toExplore
     }
 }
 
+//constructs a new HuffmanEncoder, inFile, and outFile
 HuffmanEncoder::HuffmanEncoder(std::string inFile, std::string outFile) : _inFile(inFile) , _outFile(outFile) {
     this->_inFileName = inFile;
     this->_outFileName = outFile;
 
 }
 
+//encodes the entire file
 void HuffmanEncoder::_encodeFile() {
     unsigned int totalFileSize = 0;
     for(auto const& character: this->charCountMap){
         totalFileSize += this->charBits[character.first].bitCount * character.second;
     }
     
+    //writes header in form of
+    // [total file size] [number of chars] {for each char: [char byte] [encoded bits]}
     this->_outFile.writeUInt(totalFileSize);
     this->_outFile.writeUShort(this->charBits.size());
     for(auto const& character: this->charBits){
@@ -92,6 +109,7 @@ void HuffmanEncoder::_encodeFile() {
     this->_inFile.close();
     this->_inFile = ReadBitFile(this->_inFileName);
     
+    //writes every char in file using encoded bits
     unsigned char nextChar;
     for(int i = 0; i < _inFile.fileSizeInBytes(); i++){
         nextChar = _inFile.readUByte();
@@ -113,9 +131,3 @@ void HuffmanEncoder::close() {
 HuffmanEncoder::~HuffmanEncoder() { 
     this->close();
 }
-
-
-
-
-
-
